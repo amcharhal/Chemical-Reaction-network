@@ -1,0 +1,7 @@
+Chemical.mk
+*.mk
+Chemical.project
+.Debug/
+.CMakeFiles/
+*.project
+Chemical.txt
