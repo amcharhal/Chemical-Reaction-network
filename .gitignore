@@ -1,6 +1,6 @@
 *.mk
-/Debug/*
-/CMakeFiles/*
+.Debug/
+.CMakeFiles/*
 *.project
 CMakeLists.txt
 
