@@ -1,3 +1,0 @@
-/home/mohamed/Documents/Chemical Reaction/Chemical/CMakeFiles/rebuild_cache.dir
-/home/mohamed/Documents/Chemical Reaction/Chemical/CMakeFiles/runTests.dir
-/home/mohamed/Documents/Chemical Reaction/Chemical/CMakeFiles/edit_cache.dir
