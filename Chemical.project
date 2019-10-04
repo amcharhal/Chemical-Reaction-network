@@ -5,12 +5,9 @@
     <File Name="CMakeLists.txt"/>
     <File Name="tests.cpp" ExcludeProjConfig="Debug;"/>
   </VirtualDirectory>
-  <VirtualDirectory Name="data">
-    <File Name="data.txt"/>
-  </VirtualDirectory>
   <VirtualDirectory Name="include">
-    <File Name="chemicalnetwork.h"/>
     <File Name="tools.h"/>
+    <File Name="chemicalnetwork.h"/>
     <File Name="circuitfind.h"/>
     <File Name="molecule.h" ExcludeProjConfig=""/>
     <File Name="node.h"/>
@@ -21,6 +18,7 @@
   <Description/>
   <Dependencies/>
   <VirtualDirectory Name="src">
+    <File Name="data.txt"/>
     <File Name="chemicalnetwork.cpp"/>
     <File Name="tools.cpp"/>
     <File Name="circuitfind.cpp"/>

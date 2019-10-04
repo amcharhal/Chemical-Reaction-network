@@ -60,7 +60,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/usr/share/codelite
-Objects0=$(IntermediateDirectory)/chemicalnetwork.cpp$(ObjectSuffix) $(IntermediateDirectory)/tools.cpp$(ObjectSuffix) $(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/readdata.cpp$(ObjectSuffix) $(IntermediateDirectory)/node.cpp$(ObjectSuffix) $(IntermediateDirectory)/reaction.cpp$(ObjectSuffix) $(IntermediateDirectory)/molecule.cpp$(ObjectSuffix) $(IntermediateDirectory)/circuitfind.cpp$(ObjectSuffix) $(IntermediateDirectory)/generategraph.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/readdata.cpp$(ObjectSuffix) $(IntermediateDirectory)/node.cpp$(ObjectSuffix) $(IntermediateDirectory)/reaction.cpp$(ObjectSuffix) $(IntermediateDirectory)/molecule.cpp$(ObjectSuffix) $(IntermediateDirectory)/tools.cpp$(ObjectSuffix) $(IntermediateDirectory)/chemicalnetwork.cpp$(ObjectSuffix) $(IntermediateDirectory)/circuitfind.cpp$(ObjectSuffix) $(IntermediateDirectory)/generategraph.cpp$(ObjectSuffix) 
 
 
 
@@ -91,22 +91,6 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/chemicalnetwork.cpp$(ObjectSuffix): chemicalnetwork.cpp $(IntermediateDirectory)/chemicalnetwork.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/mohamed/Documents/Chemical Reaction/Chemical/chemicalnetwork.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/chemicalnetwork.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/chemicalnetwork.cpp$(DependSuffix): chemicalnetwork.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/chemicalnetwork.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/chemicalnetwork.cpp$(DependSuffix) -MM chemicalnetwork.cpp
-
-$(IntermediateDirectory)/chemicalnetwork.cpp$(PreprocessSuffix): chemicalnetwork.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/chemicalnetwork.cpp$(PreprocessSuffix) chemicalnetwork.cpp
-
-$(IntermediateDirectory)/tools.cpp$(ObjectSuffix): tools.cpp $(IntermediateDirectory)/tools.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/mohamed/Documents/Chemical Reaction/Chemical/tools.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/tools.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/tools.cpp$(DependSuffix): tools.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/tools.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/tools.cpp$(DependSuffix) -MM tools.cpp
-
-$(IntermediateDirectory)/tools.cpp$(PreprocessSuffix): tools.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/tools.cpp$(PreprocessSuffix) tools.cpp
-
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
 	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/mohamed/Documents/Chemical Reaction/Chemical/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
@@ -146,6 +130,22 @@ $(IntermediateDirectory)/molecule.cpp$(DependSuffix): molecule.cpp
 
 $(IntermediateDirectory)/molecule.cpp$(PreprocessSuffix): molecule.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/molecule.cpp$(PreprocessSuffix) molecule.cpp
+
+$(IntermediateDirectory)/tools.cpp$(ObjectSuffix): tools.cpp $(IntermediateDirectory)/tools.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/mohamed/Documents/Chemical Reaction/Chemical/tools.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/tools.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/tools.cpp$(DependSuffix): tools.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/tools.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/tools.cpp$(DependSuffix) -MM tools.cpp
+
+$(IntermediateDirectory)/tools.cpp$(PreprocessSuffix): tools.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/tools.cpp$(PreprocessSuffix) tools.cpp
+
+$(IntermediateDirectory)/chemicalnetwork.cpp$(ObjectSuffix): chemicalnetwork.cpp $(IntermediateDirectory)/chemicalnetwork.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/mohamed/Documents/Chemical Reaction/Chemical/chemicalnetwork.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/chemicalnetwork.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/chemicalnetwork.cpp$(DependSuffix): chemicalnetwork.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/chemicalnetwork.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/chemicalnetwork.cpp$(DependSuffix) -MM chemicalnetwork.cpp
+
+$(IntermediateDirectory)/chemicalnetwork.cpp$(PreprocessSuffix): chemicalnetwork.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/chemicalnetwork.cpp$(PreprocessSuffix) chemicalnetwork.cpp
 
 $(IntermediateDirectory)/circuitfind.cpp$(ObjectSuffix): circuitfind.cpp $(IntermediateDirectory)/circuitfind.cpp$(DependSuffix)
 	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/mohamed/Documents/Chemical Reaction/Chemical/circuitfind.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/circuitfind.cpp$(ObjectSuffix) $(IncludePath)
