@@ -1,0 +1,10 @@
+digraph Test {
+"R1"[shape=box]
+"R2"[shape=box]
+"R1"->{C,D}
+"R2"->{B}
+"A" ->  {"R1"}
+"B" ->  {"R1"}
+"C" ->  {"R2"}
+"D" ->  {}
+}

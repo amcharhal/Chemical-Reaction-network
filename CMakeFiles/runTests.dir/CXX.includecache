@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mohamed/Documents/Chemical Reaction/Chemical/readdata.h
+vector
+-
+string
+-
+ostream
+-
+fstream
+-
+memory
+-
+
+/home/mohamed/Documents/Chemical Reaction/Chemical/tests.cpp
+readdata.h
+/home/mohamed/Documents/Chemical Reaction/Chemical/readdata.h
+gtest/gtest.h
+-
+memory
+-
+
