@@ -1,0 +1,7 @@
+*.mk
+/Debug/*
+/CMakeFiles/*
+*.project
+CMakeLists.txt
+
+
